@@ -11,6 +11,4 @@ titulo.style.color = "red";
 titulo.style.backgroundColor = "#000";
 titulo.style.borderBottom = "5px solid red";
 titulo.style.padding = "0.625rem";
-titulo.style.borderRadius ="5px"
-
 //
