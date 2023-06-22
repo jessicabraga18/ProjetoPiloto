@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio html dinamico</title>
+
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+    <p id="p" class="p">
+        Escreva 1 a 10 :
+    </p>
+
+
+    <div id="res">
+        <input type="button" value="fazer" onclick="faz()">
+    </div>
+
+    <p>Some al</p>
+    <script>
+        const p = document.getElementById('p');
+        const res = document.getElementById('res');
+
+    function faz(){
+         for (let i = 1; i <= 10; i++){
+            const novoRes = document.createElement('p')
+            novoRes.textContent = `${i} `
+            res.appendChild(novoRes)
+        }
+    }
+    function soma(){
+
+    }
+    </script>
+</body>
+</html>

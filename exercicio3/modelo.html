@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Somando</h1>
+    </header>
+    <section>
+        <div id="pergunta1">
+            Faça a tabuada de soma do numero 2 até 10:
+            <button id="botao" onmouseenter="somar()">Somar</button><br><br>
+        </div>
+        <div id="resposta">            
+        </div>
+        <div>
+            <p>Criar uma lista:
+                <button id="btnlista" onclick="listar()">Lista</button>
+            </p>
+            <p id="lista"></p>
+        </div>
+
+        <div>
+            <p>Como se sente hoje?
+                <input type="checkbox" id="feliz" name="opcoes" onchange="selecionou()">feliz
+                <input type="checkbox" id="fome" name="opcoes" onchange="selecionou()">fome
+                <input type="checkbox" id="calor" name="opcoes">calor                
+            </p>
+
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Jéssica</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

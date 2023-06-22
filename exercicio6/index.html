@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio </title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    
+    <section>
+
+        <div>
+            <p>é par ou impar
+                    <input type="text" id="pergunta">
+                    <button onclick="verifique()">Verificar</button>
+            </p>
+            <p id="resposta"></p>
+            
+        </div>
+
+        <script>
+
+            function verifique() {
+                let pergunta = document.getElementById('pergunta').value;
+                let resposta = document.getElementById('resposta');
+                       
+                if (pergunta%2 == 0){
+                    resposta.textContent = 'é par'
+                } else {
+                    resposta.textContent = `é impar`
+                }
+            }
+        
+
+
+
+            /*
+            let conteudo = document.querySelector('div');
+            let nome = document.createElement('p');
+            conteudo.appendChild(nome);
+            let produto = 'Nokia 1100';
+            let preço = 500;
+            let validade = true;
+
+            nome.innerHTML = `Produto: ${produto} <br> Preço: ${preço} <br> Validade:${validade}`
+            let imagem = document.createElement('img');
+            conteudo.appendChild(imagem)
+            imagem.src = './celular.jpg';
+            imagem.height = 95;
+            imagem.width = 140;
+            */
+            </script>
+
+        
+    </section>
+    <footer>
+        <p>&copy; Jéssica</p>
+    </footer>
+    
+</body>
+</html>

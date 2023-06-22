@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio </title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Faça um sistema que recebe 4 notas, uma por bimestre e calcula a média dessas 4 notas</h1>
+    </header>
+    
+    <section>
+
+        <div>
+            nota 1 : 
+            <input type="number" id="n1"><br>
+            nota 2 : 
+            <input type="number" id="n2"><br>
+            nota 3 : 
+            <input type="number" id="n3"><br>
+            nota 4 :
+            <input type="number" id="n4"><br><br>
+
+            <button id="btn" onclick="média()">Média</button>
+
+            <p id="res"></p>
+
+
+        </div>
+
+       
+
+        <script>
+            let n1 = document.querySelector('input#n1');
+            let n2 = document.querySelector('input#n2');
+            let n3 = document.querySelector('input#n3');
+            let n4 = document.querySelector('input#n4');
+            let res = document.querySelector('p#res');
+            let btn = document.querySelector('button#btn');
+            let media = 0;
+            
+
+            function média() { 
+                    let nota1 = Number(n1.value);
+                    let nota2 = Number(n2.value);
+                    let nota3 = Number(n3.value);
+                    let nota4 = Number(n4.value);            
+
+                if (nota1 == '' || nota2 == '' || nota3 == '' || nota4 == '' ){
+                    res.textContent = 'Preencha todas as notas!! '
+                } else {
+                    let media = (nota1 + nota2 + nota3 + nota4)/ 4;
+                    
+                    alert('a média foi: ' + media);
+
+                }
+            }
+        
+
+
+
+            /*
+            let conteudo = document.querySelector('div');
+            let nome = document.createElement('p');
+            conteudo.appendChild(nome);
+            let produto = 'Nokia 1100';
+            let preço = 500;
+            let validade = true;
+
+            nome.innerHTML = `Produto: ${produto} <br> Preço: ${preço} <br> Validade:${validade}`
+            let imagem = document.createElement('img');
+            conteudo.appendChild(imagem)
+            imagem.src = './celular.jpg';
+            imagem.height = 95;
+            imagem.width = 140;
+            */
+            </script>
+
+        
+    </section>
+    <footer>
+        <p>&copy; Jéssica</p>
+    </footer>
+    
+</body>
+</html>
